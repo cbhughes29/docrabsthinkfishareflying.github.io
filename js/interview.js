@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       if (choice === questions[current].correct) {
-        feedback.textContent = '¡Correcto! 🦀👏';
+        feedback.textContent = 'Correct! 🦀👏';
       } else {
         const right = questions[current].options[questions[current].correct];
-        feedback.textContent = `Error — la respuesta era “${right}”.`;
+        feedback.textContent = `Incorrect. The correct answer was: “${right}”.`;
       }
       // next question
       current++;
