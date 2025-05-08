@@ -120,3 +120,44 @@ nav {
   font-size: .9rem;
   padding: .4rem .8rem;
 }
+
+
+
+body.interview-page {
+  position: relative;
+  min-height: 100vh;
+  background: url('../assets/Crab1.jpeg') center/cover no-repeat;
+  color: var(--bg-light);
+  font-family: 'Crimson Text', serif;
+}
+
+/* dark overlay so white text pops */
+body.interview-page::before {
+  content: '';
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+/* quiz panel sits above the overlay */
+#quiz-container {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  color: var(--text-dark);
+}
+
+/* style for each choice */
+.option {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+.option input {
+  margin-right: 0.5rem;
+}
