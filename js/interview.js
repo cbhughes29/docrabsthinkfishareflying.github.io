@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
       correct: 1
     },
     {
-      q: 'Is the sea Hausdorff for crabs (🦀)?',
+      q: 'Is the sea Hausdorff (assume the standard sea topology) for crabs (🦀)?',
       options: [
         'Yes, because all crabs can fly',
-        'No, because some fish (🐟) positions relative to the crab make selecting such open sets (with respect to the standard sea basis) impossible',
+        'No, because some fish (🐟) positions relative to the crab make selecting such open sets impossible',
         'Yes, because the sea has the trivial topology',
         'No, because the sea is a T1 space'
       ],
