@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fishResult  = document.getElementById('fish-result');
   validateBtn.addEventListener('click', () => {
     const c = fishInput.value.trim() || 'That creature';
-    fishResult.textContent = `Yes— to a crab, “${c}” is just as airborne as any flying fish. 🦀`;
+    fishResult.textContent = `Yes! To a crab, “${c}” is just as airborne as any flying fish. 🦀`;
   });
 
   // — Clustering Word Detector (always clusters)
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const clusterResult = document.getElementById('cluster-result');
   clusterBtn.addEventListener('click', () => {
     const w = clusterInput.value.trim() || 'That word';
-    clusterResult.textContent = `Absolutely: “${w}” clusters like barnacles on the deepest hull. 🦀`;
+    clusterResult.textContent = `Absolutely, “${w}” clusters like barnacles on the deepest hull. 🦀`;
   });
 
   // — Easter egg: reveal “Return to Reality”
