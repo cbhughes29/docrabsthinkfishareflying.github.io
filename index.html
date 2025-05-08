@@ -2,36 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Do Crabs Think Fish Are Flying?</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>Do Crabs Think Fish Are Flying?</h1>
-    <p>A question. A paradox. A way of life.</p>
+    <p class="subtitle">A question. A paradox. A way of life.</p>
   </header>
 
-  <section id="cv">
-    <a href="assets/crabcv.pdf" download>Download the <em>Crab CV</em></a>
-  </section>
+  <main>
+    <!-- Crab CV download -->
+    <section id="cv">
+      <a href="assets/crabcv.pdf" class="btn" download>Download the Crab CV</a>
+    </section>
 
-  <section id="thought-gen">
-    <button id="generate-thought">Random Flying Fish Thought</button>
-    <blockquote id="thought-display">"To a fish, the sea is still. To a crab, it is flight."</blockquote>
-  </section>
+    <!-- Random Flying Fish Thought -->
+    <section id="thought">
+      <button id="thought-btn" class="btn">Random Flying Fish Thought</button>
+      <blockquote id="thought-display">
+        "To a fish, the sea is still. To a crab, it is flight."
+      </blockquote>
+    </section>
 
-  <section id="interactives">
-    <button id="validate-fish">Is it a Flying Fish?</button>
-    <div id="validator-output"></div>
+    <!-- Flying Fish Validator -->
+    <section id="validator">
+      <button id="validate-btn" class="btn">Is it a Flying Fish?</button>
+      <input id="fish-input" type="text" placeholder="Type a creature…">
+      <p id="fish-result"></p>
+    </section>
 
-    <input type="text" id="word-input" placeholder="Enter a word…">
-    <button id="detect-cluster">Clustering Word?</button>
-    <div id="detector-output"></div>
-  </section>
+    <!-- Clustering Word Detector -->
+    <section id="cluster">
+      <input id="cluster-input" type="text" placeholder="Clustering word?">
+      <button id="cluster-btn" class="btn">Cluster it!</button>
+      <p id="cluster-result"></p>
+    </section>
+  </main>
 
+  <!-- Secret backdoor footer -->
   <footer>
-    <span id="backdoor">🦀</span>
+    <span id="easter-egg">🦀</span>
+    <p id="secret" class="hidden">
+      <a href="https://christianbhughes.com">Return to Reality</a>
+    </p>
   </footer>
 
   <script src="js/main.js"></script>
