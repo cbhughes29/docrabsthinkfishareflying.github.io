@@ -5,24 +5,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // — YOUR crab-ified MCQs here:
   const questions = [
     {
-      q: 'A student approaches you after your linear shellgebra class. They ask you what the eigenshell of a crustacean is. How do you respond?',
+      q: 'A mollusk approaches you after your linear shellgebra class. They ask you what the eigenshell of a crustacean is. How do you respond?',
       options: [
         '1 – Lobster',
         '2 – Crab',
         '3 – Barnacle',
         '4 – Shrimp'
       ],
-      correct: 2
+      correct: 1
     },
     {
-      q: '“¿Qué significa Hausdorff para un cangrejo?”',
+      q: 'Is the sea Hausdorff for crabs?',
       options: [
-        'Que dos granos de arena nunca se toquen',
-        'Que puedes caminar por la playa sin tropezar',
-        'Que dos puntos tienen sus propias guaridas separadas',
-        'Que todas las conchas están conectadas'
+        'Yes, because all crabs can fly',
+        'No, because some fish positions relative to the crab make selecting such open sets (with respect to the standard sea basis) impossible',
+        'Yes, because the sea has the trivial topology',
+        'No, because the sea is a T1 space'
       ],
-      correct: 2
+      correct: 1
     },
     // …añade más preguntas aquí…
   ];
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const choice = parseInt(form.answer.value);
       if (isNaN(choice)) {
-        feedback.textContent = '¡Elige algo, cangrejito! 🦀';
+        feedback.textContent = 'Please claw in an answer🦀';
         return;
       }
       if (choice === questions[current].correct) {
