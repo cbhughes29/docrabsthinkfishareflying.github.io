@@ -27,21 +27,47 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // — Flying Fish Validator (always “yes”)
-  const validateBtn = document.getElementById('validate-btn');
-  const fishInput   = document.getElementById('fish-input');
-  const fishResult  = document.getElementById('fish-result');
-  validateBtn.addEventListener('click', () => {
-    const c = fishInput.value.trim() || 'That creature';
-    fishResult.textContent = `Yes! To a crab, “${c}” is just as airborne as any flying fish. 🦀`;
-  });
-
-  // — Clustering Word Detector (always clusters)
   const clusterBtn    = document.getElementById('cluster-btn');
   const clusterInput  = document.getElementById('cluster-input');
   const clusterResult = document.getElementById('cluster-result');
+
+  // 1) Compute the BWT of a string (with “$” sentinel)
+  function bwt(str) {
+    const S = str + '$';
+    const rotations = [];
+    for (let i = 0; i < S.length; i++) {
+      rotations.push(S.slice(i) + S.slice(0, i));
+    }
+    rotations.sort();
+    return rotations.map(r => r[r.length - 1]).join('');
+  }
+
+  // 2) Check that in the BWT each letter’s occurrences form one contiguous run
+  function isCluster(word) {
+    const T = bwt(word);
+    const seen = new Set(T);
+    seen.delete('$'); // ignore sentinel
+    for (let ch of seen) {
+      const first = T.indexOf(ch);
+      const last  = T.lastIndexOf(ch);
+      const count = (T.match(new RegExp(ch, 'g')) || []).length;
+      // if other letters slip between first and last, it’s not one run
+      if (last - first + 1 !== count) return false;
+    }
+    return true;
+  }
+
   clusterBtn.addEventListener('click', () => {
-    const w = clusterInput.value.trim() || 'That word';
-    clusterResult.textContent = `Absolutely, “${w}” clusters like barnacles on the deepest hull. 🦀`;
+    const w = clusterInput.value.trim();
+    if (!w) {
+      clusterResult.textContent = 'Type a word first 🦀';
+      return;
+    }
+    if (isCluster(w)) {
+      clusterResult.textContent = `“${w}” really clusters as truly as barnacles on the deepest hull! 🦀`;
+    } else {
+      clusterResult.textContent = `“${w}” does not cluster 🐟`;
+    }
   });
 
   // — Easter egg: reveal “Return to Reality”
