@@ -186,3 +186,28 @@ body.interview-page::before {
   padding-left: 1rem;
   border-left: 4px solid var(--crab-red);
 }
+
+#funding-form label {
+  display: block;
+  margin: 1rem 0 .5rem;
+  font-weight: bold;
+}
+
+#funding-form input[type="text"],
+#funding-form input[type="number"],
+#funding-form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: .5rem;
+  border: 1px solid var(--text-dark);
+  border-radius: 4px;
+}
+
+#funding-form input[type="checkbox"] {
+  margin-right: .5rem;
+}
+
+#thank-you p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
