@@ -101,3 +101,22 @@ footer {
 .hidden {
   display: none;
 }
+
+
+header {
+  position: relative;    /* make nav absolutely positioned inside */
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+nav {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+/* optionally give it a slightly different look */
+.btn.nav-btn {
+  font-size: .9rem;
+  padding: .4rem .8rem;
+}
