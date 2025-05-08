@@ -1,36 +1,103 @@
-/* Base resets */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* 1) Import font + define your crab palette */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+
+:root {
+  --crab-red: #C0392B;    /* deep, meaty crab-shell red */
+  --bg-light:  #FEF9F7;   /* soft off-white */
+  --text-dark: #2C3E50;   /* rich charcoal */
+}
+
+/* 2) Reset & base typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Garamond', serif;
-  background: #f5f1e8;
-  color: #333;
-  line-height: 1.6;
-  padding: 2rem;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  font-family: 'Crimson Text', Garamond, serif;
+  line-height: 1.5;
+  padding: 1rem;
 }
-.hero {
+
+/* 3) Hero styling */
+header {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 4rem 1rem;
 }
-.hero h1 {
+header h1 {
   font-size: 3rem;
+  color: var(--crab-red);
+  margin-bottom: .5rem;
 }
-button {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
+header .subtitle {
+  font-size: 1.25rem;
+  opacity: .8;
+}
+
+/* Center and constrain content */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* 4) Button styles */
+.btn {
+  display: inline-block;
+  margin: .5rem .25rem;
+  padding: .6rem 1.2rem;
+  background: var(--crab-red);
+  color: var(--bg-light);
   border: none;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin: 0.5rem 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity .2s;
 }
-#backdoor {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+.btn:hover {
+  opacity: .9;
+}
+
+/* Thought blockquote */
+blockquote {
+  margin: 1rem auto;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Inputs */
+input[type="text"] {
+  padding: .5rem;
+  font-size: 1rem;
+  border: 1px solid var(--text-dark);
+  border-radius: 4px;
+  width: 60%;
+  max-width: 200px;
+  margin: 0 .5rem;
+}
+
+/* Results paragraphs */
+#fish-result,
+#cluster-result {
+  margin-top: .5rem;
+  font-weight: bold;
+}
+
+/* Footer + Easter egg */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+}
+#easter-egg {
   font-size: 2rem;
   cursor: pointer;
 }
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+.hidden {
+  display: none;
+}
