@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // — YOUR crab-ified MCQs here:
   const questions = [
     {
-      q: '“¿Cuántas mallas topológicas hay en un conjunto de dos elementos?” (Reexpresado en lenguaje cangrejo)',
+      q: 'A student approaches you after your linear shellgebra class. They ask you what the eigenshell of a crustacean is. How do you respond?',
       options: [
-        '2 – Cada elemento tiene su propio caparazón',
-        '3 – Incluye vacío, todo y la solitaria {a}',
-        '4 – Suma la trivial y la gruesa',
-        '5 – Porque los cangrejos siempre cuentan de más'
+        '1 – Lobster',
+        '2 – Crab',
+        '3 – Barnacle',
+        '4 – Shrimp'
       ],
       correct: 2
     },
