@@ -1,38 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Do Crabs Think Fish Are Flying?</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="hero">
-    <h1>Do Crabs Think Fish Are Flying?</h1>
-    <p>A question. A paradox. A way of life.</p>
-  </header>
+/* Base resets */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <section id="cv">
-    <a href="assets/crabcv.pdf" download>Download the <em>Crab CV</em></a>
-  </section>
-
-  <section id="thought-gen">
-    <button id="generate-thought">Random Flying Fish Thought</button>
-    <blockquote id="thought-display">"To a fish, the sea is still. To a crab, it is flight."</blockquote>
-  </section>
-
-  <section id="interactives">
-    <button id="validate-fish">Is it a Flying Fish?</button>
-    <div id="validator-output"></div>
-
-    <input type="text" id="word-input" placeholder="Enter a word…">
-    <button id="detect-cluster">Clustering Word?</button>
-    <div id="detector-output"></div>
-  </section>
-
-  <footer>
-    <span id="backdoor">🦀</span>
-  </footer>
+body {
+  font-family: 'Garamond', serif;
+  background: #f5f1e8;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 0.5rem 0;
+}
+#backdoor {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
   <script src="js/main.js"></script>
 </body>
