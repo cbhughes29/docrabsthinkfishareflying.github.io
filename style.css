@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do Crabs Think Fish Are Flying?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Do Crabs Think Fish Are Flying?</h1>
+    <p>A question. A paradox. A way of life.</p>
+  </header>
+
+  <section id="cv">
+    <a href="assets/crabcv.pdf" download>Download the <em>Crab CV</em></a>
+  </section>
+
+  <section id="thought-gen">
+    <button id="generate-thought">Random Flying Fish Thought</button>
+    <blockquote id="thought-display">"To a fish, the sea is still. To a crab, it is flight."</blockquote>
+  </section>
+
+  <section id="interactives">
+    <button id="validate-fish">Is it a Flying Fish?</button>
+    <div id="validator-output"></div>
+
+    <input type="text" id="word-input" placeholder="Enter a word…">
+    <button id="detect-cluster">Clustering Word?</button>
+    <div id="detector-output"></div>
+  </section>
+
+  <footer>
+    <span id="backdoor">🦀</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
