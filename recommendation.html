@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Recommendation Letter Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header style="text-align:center; padding:2rem 1rem;">
+    <a href="index.html" class="btn">← Back to Home</a>
+    <h1>✉️ Recommendation Letter Portal</h1>
+  </header>
+
+  <main style="max-width:600px; margin:0 auto; padding:1rem;">
+    <form id="rec-form">
+      <label for="candidate-name">Candidate Name</label>
+      <input type="text" id="candidate-name" required />
+
+      <label for="candidate-position">Current Position</label>
+      <input type="text" id="candidate-position" required />
+
+      <label for="candidate-degree">Highest Degree Earned</label>
+      <input type="text" id="candidate-degree" placeholder="e.g. Ph.D. in Marine Biology" required />
+
+      <label for="field-of-study">Field of Study</label>
+      <input type="text" id="field-of-study" required />
+
+      <label for="years-known">Years Known</label>
+      <input type="number" id="years-known" min="0" required />
+
+      <label for="relationship">Relationship to Candidate</label>
+      <input type="text" id="relationship" required />
+
+      <label for="recommender-name">Your Name</label>
+      <input type="text" id="recommender-name" required />
+
+      <label for="recommender-position">Your Position</label>
+      <input type="text" id="recommender-position" required />
+
+      <button type="submit" class="btn">Generate Letter</button>
+    </form>
+
+    <div id="letter-output" class="hidden"></div>
+  </main>
+
+  <script src="js/recommendation.js"></script>
+</body>
+</html>
