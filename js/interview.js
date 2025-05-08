@@ -5,26 +5,35 @@ document.addEventListener('DOMContentLoaded', () => {
   // — YOUR crab-ified MCQs here:
   const questions = [
     {
-      q: 'A mollusk approaches you after your linear shellgebra class. They ask you what the eigenshell of a crustacean is. How do you respond?',
+      q: 'A mollusk approaches you after your linear shellgebra 🐚 class. They ask you what the eigenshell of a crustacean is. How do you respond?',
       options: [
-        '1 – Lobster',
-        '2 – Crab',
+        '1 – Lobster 🦞',
+        '2 – Crab 🦀',
         '3 – Barnacle',
-        '4 – Shrimp'
+        '4 – Shrimp 🦐'
       ],
       correct: 1
     },
     {
-      q: 'Is the sea Hausdorff for crabs?',
+      q: 'Is the sea Hausdorff for crabs (🦀)?',
       options: [
         'Yes, because all crabs can fly',
-        'No, because some fish positions relative to the crab make selecting such open sets (with respect to the standard sea basis) impossible',
+        'No, because some fish (🐟) positions relative to the crab make selecting such open sets (with respect to the standard sea basis) impossible',
         'Yes, because the sea has the trivial topology',
         'No, because the sea is a T1 space'
       ],
       correct: 1
     },
-    // …añade más preguntas aquí…
+    {
+      q: 'Consider a shell (🐚) swap between n crabs, in such a way that no induced shell swap on any admissible shell cylinder results in any shell collisions or cracks. Is it true that all return words in the crustacean shell language of such a shell swap are shell clustering?',
+      options: [
+        'Yes, because of group reef morphsims between shell languages',
+        'No, because shell exchanges are unpredictable',
+        'Yes, because I already counted all of the shells',
+        'Vague claw gestures at the interviewer '
+      ],
+      correct: 0
+    },
   ];
 
   let current = 0;
@@ -68,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
           showQuestion(current);
         } else {
           quizContainer.innerHTML =
-            '<p>Has sobrevivido al crustáceo — ¡Bienvenido al profesorado! 🦀🎓</p>';
+            '<p>Congrautulations! However, you must arrange your own travel to the Mariana Trench before joining our faculty 🦀🎓</p>';
         }
       }, 1400);
     });
