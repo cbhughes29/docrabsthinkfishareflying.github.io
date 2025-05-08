@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       correct: 1
     },
     {
-      q: 'Consider a shell (🐚) swap between n crabs, in such a way that no induced shell swap on any admissible shell cylinder results in any shell collisions or cracks. Is it true that all return words in the crustacean shell language of such a shell swap are shell clustering?',
+      q: 'Consider a shell (🐚) swap between n crabs, in such a way that no induced shell swap on any admissible shell cylinder results in any shell cracking. Is it true that all return words in the crustacean language of such a shell swap are shell clustering?',
       options: [
         'Yes, because of group reef morphsims between shell languages',
         'No, because shell exchanges are unpredictable',
