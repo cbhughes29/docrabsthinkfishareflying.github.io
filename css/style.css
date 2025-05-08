@@ -240,3 +240,38 @@ body.interview-page::before {
   margin-bottom: 1rem;
 }
 
+
+.faculty-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media(min-width: 600px) {
+  .faculty-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.faculty-item {
+  background: var(--bg-light);
+  border: 2px solid var(--crab-red);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.faculty-name {
+  margin: 0 0 .25rem;
+  color: var(--crab-red);
+}
+
+.faculty-title {
+  margin: 0 0 .5rem;
+  font-style: italic;
+  opacity: .8;
+}
+
+.faculty-bio {
+  margin: 0;
+  line-height: 1.4;
+}
