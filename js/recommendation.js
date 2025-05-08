@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
       <p>To the Admissions Committee,<br/>
       South Mariana Trench University</p>
 
-      <p>It is with great pleasure (and a sturdy shell) that I recommend <strong>${cName}</strong> for a faculty position at your esteemed institution. I have known them for <strong>${years} ${years === '1' ? 'year' : 'years'}</strong> as their <em>${relation}</em>, and I’ve been consistently impressed by their dedication and intellect.</p>
+      <p>It is with great pleasure and shell full of confidence that I recommend <strong>${cName}</strong> for a faculty position at your esteemed institution. I have known them for <strong>${years} ${years === '1' ? 'year' : 'years'}</strong> as their <em>${relation}</em>, and I’ve been consistently impressed by their dedication and intellect.</p>
 
-      <p><strong>${cName}</strong> currently serves as <em>${cPos}</em> and holds the highest degree of <em>${cDeg}</em> in <em>${field}</em>. Their scholarly prowess is as solid as the trench’s bedrock, and their research into chaotic reef systems is nothing short of claw-sharp in its precision.</p>
+      <p><strong>${cName}</strong> currently serves as <em>${cPos}</em> and holds the degree of <em>${cDeg}</em> in <em>${field}</em>. Their scholarly prowess is as solid as the sturdiest sea vent, and their research into chaotic reef system dynamics is of commendable precision.</p>
 
-      <p>Their contributions to reef theory and mollusk-induced chaotic systems will greatly enrich South Mariana Trench University’s academic waters. I endorse them wholeheartedly and anticipate their tenure will be as enduring as the tides.</p>
+      <p>Their contributions to reef theory and mollusk-induced chaotic systems will greatly sharpen South Mariana Trench University’s academic claws. I endorse them wholeheartedly and anticipate their tenure will be enduring.</p>
 
       <p>Sincerely,<br/>
       <strong>${rName}</strong><br/>
