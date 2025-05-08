@@ -5,7 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const thoughts = [
       "To a fish, the sea is still. To a crab, it is flight.",
       "Topology is just crustacean empathy formalized.",
-      "When a return word circles thrice, a crab is already home."
+      "When a return word circles thrice, a crab is already home.",
+      "All fish are compact in the end.",
+      "Not all Cauchy sequences converge to a limit in their space, but all fish eventually drift.",
+      "The boundary of a fish is neither closed nor open, but scale-dependent.",
+      "To a fish, the ocean is Hausdorff, but not so to the crab.",
+      "Every IET amongst crabs has connections at each shell, and is thus irregular."
   ];
 
   const thoughtBtn     = document.getElementById('thought-btn');
