@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Commune with the Brine Codex</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* simple codex‐chat styling */
+    #codex-window {
+      max-width:600px;
+      margin:2rem auto;
+      padding:1rem;
+      border:2px solid var(--crab-red);
+      border-radius:8px;
+      height: 400px;
+      overflow-y: auto;
+      background: var(--bg-light);
+      position: relative;
+      z-index: 0;
+    }
+    .msg { margin: .5rem 0; }
+    .msg.user { text-align: right; }
+    .msg.assistant { text-align: left; }
+    #codex-form {
+      max-width:600px;
+      margin: 1rem auto;
+      display: flex;
+      gap: .5rem;
+    }
+    #codex-form input {
+      flex:1;
+      padding:.5rem;
+      border:1px solid var(--text-dark);
+      border-radius:4px;
+    }
+  </style>
+</head>
+<body>
+  <header style="text-align:center; padding:1rem;">
+    <a href="index.html" class="btn">← Home</a>
+    <h1>📜 Commune with the Brine Codex</h1>
+  </header>
+
+  <div id="codex-window"></div>
+
+  <form id="codex-form">
+    <input type="text" id="codex-input" placeholder="Whisper to the Codex…" autocomplete="off" required />
+    <button type="submit" class="btn">Send</button>
+  </form>
+
+  <script src="js/commune.js"></script>
+</body>
+</html>
