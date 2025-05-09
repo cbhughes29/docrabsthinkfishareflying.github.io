@@ -1,24 +1,32 @@
+// netlify-functions/chat.js
 
-import OpenAI from "openai";
-
-export async function handler(event) {
+exports.handler = async (event) => {
   try {
     const { messages } = JSON.parse(event.body);
+
+    // dynamic import of the ESM-only OpenAI package
+    const { default: OpenAI } = await import("openai");
+
     const client = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY
     });
 
-    // Use the Responses API per OpenAI quickstart
+    // use the Responses API as in the quickstart
     const response = await client.responses.create({
-      model: "gpt-4.1",
+      model: "gpt-4.1",       // or "gpt-3.5-turbo"
       input: messages
     });
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ output: response.output_text })
+      body: JSON.stringify({ assistant: response.output_text })
     };
+
   } catch (err) {
-    return { statusCode: 500, body: err.toString() };
+    console.error("Chat function error", err);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: err.message })
+    };
   }
-}
+};
