@@ -9,13 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     Math.floor(Math.random() * titles.length)
   ];
 
-  // 2) Handle form submission
   const form     = document.getElementById('funding-form');
   const thankYou = document.getElementById('thank-you');
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-    // you could grab the values here if you need…
     form.classList.add('hidden');
     thankYou.classList.remove('hidden');
   });
